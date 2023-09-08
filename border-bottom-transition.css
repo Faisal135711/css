@@ -4,7 +4,7 @@
 <style>
 
 .link {
-	text-decoration: none;
+    text-decoration: none;
     transition: text-decoration 1s ease;
     color: black;
     font-size: 25px;
@@ -12,7 +12,7 @@
 }
 
 .link:after {
-	content: "";
+    content: "";
     width: 0;
     height: 2px;
     display: block;
@@ -21,8 +21,8 @@
 }
 
 .link:hover:after {
-	width: 100%;
-	background: green;
+    width: 100%;
+    background: green;
 }
 
 </style>
