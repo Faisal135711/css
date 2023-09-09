@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 300px;
+            padding: 1rem 2rem;
+        }
+        
+        .card:first-child {
+            margin-bottom: 1rem;
+        }
+
+        .card h1 {
+            height: 10px;
+        }
+
+        .card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .card p {
+            height: 100px;
+        }
+
+        .loading {
+            animation: skeleton-loading 1s ease infinite alternate;
+        }
+
+        @keyframes skeleton-loading {
+            0% {
+                background-color: hsl(200, 20%, 70%);
+            }
+
+            100% {
+                background-color: hsl(200, 20%, 95%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1 class="loading"></h1>
+        <div class="loading"></div>
+        <p class="loading"></p>
+    </div>
+
+    <div class="card">
+        <h1 class="loading"></h1>
+        <div class="loading"></div>
+        <p class="loading"></p>
+    </div>
+</body>
+</html>
